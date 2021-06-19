@@ -79,6 +79,23 @@
       "selectors": ["button[type=\"submit\"]"],
       "misMatchThreshold" : 0.0,
       "requireSameDimensions": true
+    },
+    {
+      "label": "Submit button blue component validation",
+      "onReadyScript": "puppet/custom/fillAllMandatoryFields.js",
+      "url": "https://ticketbox-backstopjs-tat.s3.eu-central-1.amazonaws.com/index.html",
+      "selectors": ["button[type=\"submit\"]"],
+      "misMatchThreshold" : 0.0,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Success message component",
+      "onReadyScript": "puppet/custom/successfullySubmitForm.js",
+      "url": "https://ticketbox-backstopjs-tat.s3.eu-central-1.amazonaws.com/index.html",
+      "selectors": [".success"],
+      "hideSelectors": [".success span"],
+      "misMatchThreshold" : 0.0,
+      "requireSameDimensions": true
     }
   ],
   "paths": {
